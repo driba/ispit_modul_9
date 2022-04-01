@@ -9,7 +9,7 @@ namespace EF_CodeFirst.Models
         public int StudentID { get; set; }
 
         [Required]
-        [Column(TypeName = "nchar")]
+        [Column(TypeName = "nchar(20)")]
         public string StudentName { get; set; }
 
         [Required]
