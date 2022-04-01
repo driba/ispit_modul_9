@@ -10,9 +10,10 @@ namespace EF_CodeFirst.Models
 
         [Required]
         public string GradeName { get; set; }
+        
         public string? Section { get; set; }
 
-        [ForeignKey("AuthorId")]
+        [ForeignKey("StudentId")]
         public Student Student { get; set; }
         public int StudentId { get; set; }
     }

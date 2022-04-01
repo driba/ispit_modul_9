@@ -14,9 +14,13 @@ namespace EF_CodeFirst.Models
 
         [Required]
         [DataType(DataType.Date)]
+        [Column(TypeName = "datetime")]
         public DateTime DateOfBirth { get; set; }
 
+        [Column(TypeName = "decimal(5, 2)")]
         public decimal? Height { get; set; }
+
+        [Column(TypeName = "float")]
         public float? Weight { get; set; }
     }
 }
